@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+video#bgvid { 
+  position: fixed; right: 0; top: 0; 
+  min-width: 100%; min-height: 100%; 
+  width: auto; 
+  height: auto; 
+  z-index: -100; 
+  background-size: cover; 
+  }
+  
+div#ohf{
+	position: absolute;
+	left: 1vw;
+	top: 2.5vw;
+	height: auto;
+	width: auto;
+	}
+
+
+a#buttonword{
+	text-align: center;
+	width: 150px;
+	height: 100px;
+	line-height: 100px;
+	color: #FFF;
+	font-family: "黑体";
+	font-size: 24px;
+	display: block;
+    text-decoration: none;
+    float: left;
+	cursor: pointer;
+	}
+
+.choose:hover{
+    cursor: pointer;
+}
+
+img#b{
+    opacity: 0.75; 
+}
+img#b:hover{
+    opacity: 1.0; 
+}
+
+div#fs{
+	width: 80px;
+	height: 30px;
+	border: 1px solid #FFF;
+	border-radius: 6px;
+	position: absolute;
+    top:40vw;
+    left:1vw;
+    cursor: pointer;
+    visibility:visible; 
+	}
+
+div#fs:hover{
+	width: 80px;
+	height: 30px;
+	border: 1px solid #FFF;
+	border-radius: 6px;
+	background:rgba(204,204,204,0.2);
+	transition:0.1s all;
+	position: absolute;
+    top:40vw;
+    left:1vw;
+    cursor: pointer;
+    visibility:visible; 
+	}
+	
+div#buttomword{
+	text-align: center;
+	line-height: 30px;
+	color: rgba(255,255,255,0.9);
+	width: 80px;
+	height: 30px;
+	font-family: "黑体";
+	font-size: 14px;
+	display: block;
+    text-decoration: none;
+	cursor: pointer;
+	}
+
+
+}
+
+@media (min-aspect-ratio: 10/16) and (max-aspect-ratio:16/9) {
+    #video video {
+        width:300%;
+        left: -100%
+    }
+}
+
+@media (max-aspect-ratio: 10/16) {
+    #video video {
+        width:600%;
+        left: -200%
+    }
+}
