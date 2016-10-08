@@ -1,5 +1,4 @@
 $(function() {
-	<!--»ÃµÆÆ¬½Å±¾
 $('#slider').cycle({speed:5000, timeout: 60000,random:  1});
 
 //是否时间足迹
@@ -11,9 +10,11 @@ $(document).ready(function(){
   $('#y').click(function () {  
   owl.goTo(2)   
   $("#opentxt").animate({marginTop:"100px", opacity:"0"},{ duration: 1000 }).fadeOut(2000);
+  $(".owl-controls").show();
   });
   $('#nn').click(function () {  
   $("#opentxt").animate({marginTop:"100px", opacity:"0"},{ duration: 1000 }).fadeOut(2000);
+  $(".owl-controls").show();
   });
 
 //是否时间足迹
