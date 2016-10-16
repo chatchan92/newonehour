@@ -19,7 +19,7 @@ body {
 
 .settings {
 	position: fixed;
-	top: 20px;
+	top: 100px;
 	left: 20px;
 	display: block;
 	width: 20px;
@@ -229,7 +229,7 @@ body.working {
 		border: none;
 		position: fixed;
 		font-weight: normal;
-		top: 20px;
+		top: 90px;
 		right: 20px;
 	}
 		body.working a#cancel:hover {
@@ -249,7 +249,7 @@ body.log {
 	}
 	body.log #void {
 		position: fixed;
-		top: 20px;
+		top: 90px;
 		right: 20px;
 		color: #fff;
 		padding: 12px 20px;
