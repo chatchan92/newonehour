@@ -492,16 +492,6 @@ $('#wi').click(function () {Player.data = [
 });
 
 
-
-
-
-
-audio.controls = false;
-
-
-
-
-
 //ÖØÖÃ²¥·ÅÆ÷
 function resetPlayer() {
       audio.currentTime = 0; context.clearRect(0,0,canvas.width,canvas.height);
