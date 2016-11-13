@@ -15,7 +15,7 @@
 	display: inline-block;
 	background-image: url(../images/arrow.gif); 
 	zoom: 1;
-	*display: inline;
+	display: inline;
 	margin: 20px;
 	padding: 3px 10px;
 	font-size: 12px;
