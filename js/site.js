@@ -37,7 +37,6 @@ $(document).ready(function() {
     }
 
     function everyFive(periods) { 
-      console.log("----");
     }
 
     $("#timer span").countdown({

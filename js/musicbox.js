@@ -282,7 +282,6 @@ $('#wi').on("click", function(e){
 				var currentMusic=Player.data[Player.currentIndex];
 				//²¥·ÅÒôÀÖ 
                 currentMusic = currentMusic.substring(0,currentMusic.indexOf('.'));
-                console.log("Player.currentIndex : " + Player.currentIndex);
                 Player.audio.src =Player.data[Player.currentIndex];
                 play.className="pause";
 				
@@ -467,14 +466,12 @@ $('#wi').click(function () {Player.data = [
 				    				 
                     if ( playnumber >= Player.data.length ) {
                          Player.data = Player.data.sort(randomsort);
-				         //alert(Player.data);
 				         playnumber=0;
                          Player.currentIndex = playnumber; }//²¥ÍêÁÐ±íÖØÐÂËæ»ú
 											  
                 }
 
                 currentMusic = currentMusic.substring(0,currentMusic.indexOf('.'));
-                console.log("Player.currentIndex : " + Player.currentIndex);
                 Player.audio.src =Player.data[Player.currentIndex];
 				play.className="pause";
 				
