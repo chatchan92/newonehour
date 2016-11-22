@@ -1,3 +1,18 @@
+$(document).ready(function(){
+ setTimeout(function () {$("#ohf").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},500); 
+ setTimeout(function () {$("#fs").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},1500); 
+ setTimeout(function () {$("#a1").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},600); 
+ setTimeout(function () {$("#a2").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},700); 
+ setTimeout(function () {$("#a3").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},800); 
+ setTimeout(function () {$("#a4").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},900); 
+ setTimeout(function () {$("#a5").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},1000); 
+ setTimeout(function () {$("#a6").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},1100); 
+ setTimeout(function () {$("#a7").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},1200);      
+ setTimeout(function () {$("#a8").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},1300); 
+ setTimeout(function () {$("#a9").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},1400); 
+ setTimeout(function () {$("#getstart").animate({marginTop:"83vh", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},1400); 
+ });
+
 var imgSrc=[
 "http://i4.buimg.com/aabe0d7d0afc5a0d.jpg",
 "http://i4.buimg.com/55cf504d18441cd3.jpg",

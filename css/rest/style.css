@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+body {
+  font-family: "华文细黑";
+}
+
 video#bgvid { 
   position: fixed; right: 0; top: 0; 
   min-width: 100%; min-height: 100%; 
@@ -97,4 +101,23 @@ div#buttomword{
         width:600%;
         left: -200%
     }
+}
+
+#getstart{
+	margin-left:46%;
+	z-index: 99999;
+	margin-top:83vh;
+	display: block;
+    text-decoration: none;
+	cursor: pointer;
+	font-size: 17px;
+	display: none;
+}
+
+#zenmenu{
+	top:15vh;
+	position:fixed;
+	left:0;
+	right:0;
+	display:inline-block;
 }

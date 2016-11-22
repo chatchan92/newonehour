@@ -81,14 +81,13 @@
   </ul>
      <!--菜单-->
    <!--菜单弹出按钮-->
-   <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;z-index:99999;">
-      <a class="btn-floating btn-large blue" id="fullscreen"><i class="material-icons">aspect_ratio</i></a>
-   
+   <div id="showin3" class="fixed-action-btn horizontal click-to-toggle" style="bottom: -5px; right: 24px;z-index:99999;display:none;">
+      <a class="btn-floating btn-large blue" id="fullscreen"><i class="material-icons">aspect_ratio</i></a> 
       <a class="btn-floating btn-large red button-collapse" data-activates="slide-out"><i class="material-icons">menu</i></a>
-      </div>
+  </div>
    <!--菜单弹出按钮-->
   <!--左上角logo-->
-   <div style="float: left; margin-top:40px;margin-left:30px;z-index:2; position:relative;">
+   <div id="showin1" style="float: left; margin-top:-10px;margin-left:30px;z-index:2; position:relative;display:none;">
       <a href="Index.html"><img src="images/onehourfocus2.png"/ style="width:250px"></a>
    </div>
   <!--左上角logo-->
@@ -136,26 +135,21 @@
                </div>          
       </div>     
     <!--Music Box-->
-<div id="bg">
-
-     <div class="owl-carousel" id="owl-demo1" style="top:0px;left:0px;position:fixed;float:left;z-index:0; ">
+          <div id="bg">
+            <div class="owl-carousel" id="owl-demo1" style="top:0px;left:0px;position:fixed;float:left;z-index:0; ">
                <!--图片查看器-->
-                 <div class="item">
-                   
+                 <div class="item">                   
                  <iframe id="track" src="slides.html" frameborder="0" >  
                  </iframe>
                  </div>
                  <div class="item">
-
                    <div id="slider2">
                      <iframe id="track" src="track.html" frameborder="0" >
                      </iframe>
                    </div>
-
                  </div>
-                
-               </div> 
-               </div>
+            </div> 
+          </div>
               <!--图片查看器-->
 
 

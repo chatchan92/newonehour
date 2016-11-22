@@ -18,6 +18,7 @@ div#player{
     float:right;
 	max-height: 54px;
 	position:relative;
+	display:none;
 	}
 div#position{
 	z-index:99999; 
