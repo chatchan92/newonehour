@@ -4,13 +4,12 @@ $('#slider').cycle({speed:5000, timeout: 60000,random:  1});
 //是否时间足迹
 
 $(document).ready(function(){
- setTimeout(function () {$("#showin1").animate({marginTop:"50px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},500); 
- setTimeout(function () {$("#player").animate({marginLeft:"50px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},500); 
- setTimeout(function () {$("#showin3").animate({marginBottom:"50px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},500); 
-
   var owl = $(".owl-carousel").data('owlCarousel');
   var check = 0;
   setTimeout(function () {$("#opentxt").animate({marginTop:"100px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},2500); 
+   setTimeout(function () {$("#showin1").animate({marginTop:"50px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},500); 
+  setTimeout(function () {$("#player").animate({marginLeft:"50px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},500); 
+  setTimeout(function () {$("#showin3").animate({marginBottom:"50px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},500); 
   $('#y').click(function () {  
   owl.goTo(2)   
   $("#opentxt").animate({marginTop:"100px", opacity:"0"},{ duration: 1000 }).fadeOut(2000);
@@ -266,41 +265,7 @@ $('#wi').on("click", function(e){
             'http://chansound.oss-cn-shanghai.aliyuncs.com/g15.mp3',
             'http://chansound.oss-cn-shanghai.aliyuncs.com/g16.mp3',
             'http://chansound.oss-cn-shanghai.aliyuncs.com/g17.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/g18.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z1.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z2.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z3.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z4.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z5.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z6.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z7.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z8.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z9.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z10.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z11.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z12.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z13.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z14.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z15.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z16.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/z17.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p1.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p2.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p3.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p4.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p5.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p6.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p7.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p8.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p9.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p10.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p11.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p12.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p13.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p14.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p15.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p16.mp3',
-            'http://chansound.oss-cn-shanghai.aliyuncs.com/p17.mp3'];
+            'http://chansound.oss-cn-shanghai.aliyuncs.com/g18.mp3'];
             //if (class="a") { Player.data = ['a.mp3'];}
         },
 
@@ -320,6 +285,7 @@ $('#wi').on("click", function(e){
 				var currentMusic=Player.data[Player.currentIndex];
 				//²¥·ÅÒôÀÖ 
                 currentMusic = currentMusic.substring(0,currentMusic.indexOf('.'));
+                console.log("Player.currentIndex : " + Player.currentIndex);
                 Player.audio.src =Player.data[Player.currentIndex];
                 play.className="pause";
 				
@@ -504,12 +470,14 @@ $('#wi').click(function () {Player.data = [
 				    				 
                     if ( playnumber >= Player.data.length ) {
                          Player.data = Player.data.sort(randomsort);
+				         //alert(Player.data);
 				         playnumber=0;
                          Player.currentIndex = playnumber; }//²¥ÍêÁÐ±íÖØÐÂËæ»ú
 											  
                 }
 
                 currentMusic = currentMusic.substring(0,currentMusic.indexOf('.'));
+                console.log("Player.currentIndex : " + Player.currentIndex);
                 Player.audio.src =Player.data[Player.currentIndex];
 				play.className="pause";
 				
@@ -525,6 +493,16 @@ $('#wi').click(function () {Player.data = [
 
 
 });
+
+
+
+
+
+
+audio.controls = false;
+
+
+
 
 
 //ÖØÖÃ²¥·ÅÆ÷

@@ -104,10 +104,10 @@ div#buttomword{
 }
 
 #getstart{
+	position: fixed;
 	margin-left:46%;
 	z-index: 99999;
-	margin-top:83vh;
-	display: block;
+	bottom:50px;
     text-decoration: none;
 	cursor: pointer;
 	font-size: 17px;
@@ -121,3 +121,33 @@ div#buttomword{
 	right:0;
 	display:inline-block;
 }
+div.cancel{
+	background-image: url(../../images/buttoms/cancel1.png);
+	background-size:45%;
+	background-position:10.5px 11px;
+	background-color:rgba(102,102,102,0.3);
+	background-repeat: no-repeat;
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+    display: inline-block;	margin-top: 4px;
+	cursor: pointer;
+	border: 1px solid #FFF;
+	margin-left: auto;
+    margin-right: auto;
+	}
+div.cancel:hover{
+	background-image: url(../../images/buttoms/cancel.png);
+	background-size:45%;
+	background-position:10.5px 11px;
+	background-color:rgba(255,255,255,0.7);
+	background-repeat: no-repeat;
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+    display: inline-block;	margin-top: 4px;
+	cursor:pointer;
+	border: 1px solid #FFF;
+	margin-left: auto;
+    margin-right: auto;
+	}

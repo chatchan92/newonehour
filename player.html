@@ -40,7 +40,7 @@
     <script src="js/musicbox.js" type="text/javascript" ></script> 
     <script src="js/time_js.js" type="text/javascript" ></script>
     <script src="js/owl.carousel.js"></script>
-    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/materialize.min.js" type="text/javascript" ></script>
     <!-- materialize -->
     <link rel="stylesheet" href="css/materialize.min.css" />
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -81,10 +81,11 @@
   </ul>
      <!--菜单-->
    <!--菜单弹出按钮-->
-   <div id="showin3" class="fixed-action-btn horizontal click-to-toggle" style="bottom: -5px; right: 24px;z-index:99999;display:none;">
-      <a class="btn-floating btn-large blue" id="fullscreen"><i class="material-icons">aspect_ratio</i></a> 
+   <div class="fixed-action-btn horizontal click-to-toggle" id="showin3" style="bottom: -5px; right: 24px;z-index:99999;display:none;">
+      <a class="btn-floating btn-large blue" id="fullscreen"><i class="material-icons">aspect_ratio</i></a>
+   
       <a class="btn-floating btn-large red button-collapse" data-activates="slide-out"><i class="material-icons">menu</i></a>
-  </div>
+      </div>
    <!--菜单弹出按钮-->
   <!--左上角logo-->
    <div id="showin1" style="float: left; margin-top:-10px;margin-left:30px;z-index:2; position:relative;display:none;">
@@ -135,12 +136,13 @@
                </div>          
       </div>     
     <!--Music Box-->
-          <div id="bg">
-            <div class="owl-carousel" id="owl-demo1" style="top:0px;left:0px;position:fixed;float:left;z-index:0; ">
+<div id="bg">
+
+     <div class="owl-carousel" id="owl-demo" style="top:0px;left:0px;position:fixed;float:left;z-index:0; ">
                <!--图片查看器-->
-                 <div class="item">                   
-                 <iframe id="track" src="slides.html" frameborder="0" >  
-                 </iframe>
+                 <div class="item">
+                   <iframe id="track" src="slides.html" frameborder="0" >  
+                   </iframe>
                  </div>
                  <div class="item">
                    <div id="slider2">
@@ -148,9 +150,11 @@
                      </iframe>
                    </div>
                  </div>
-            </div> 
-          </div>
+                
+               </div> 
+               </div>
               <!--图片查看器-->
+
 
 
      <!-- 工具 -->
@@ -162,9 +166,11 @@
    <!-- 幻灯1-->
     <script>
     $(function(){
-        $('#owl-demo1').owlCarousel({
+        $('#owl-demo').owlCarousel({
     items: 1,
     lazyLoad: true,
+    lazyFollow:true,
+    lazyEffect:"fade",
     itemsScaleUp: true,
     itemsDesktop:false,
     slideSpeed:800,
@@ -173,10 +179,17 @@
   });});
     </script>
     <!-- 幻灯2-->
-
+    <script src="js/responsiveslides.min.js"></script>
     <script>
 
-<<<<<<< HEAD
+    $(function() {
+      
+      $('#dowebok').responsiveSlides({
+        auto: false,
+        nav: true,
+      });
+    });
+
     //window.parent.document.title = 
     function changeTitle(){
       console.log("----");
@@ -198,15 +211,6 @@
       //setInterval(function(){ console.log(document.getElementById('timer')); }, 1000);
 
 
-=======
-    $(function() {
-      
-      $('#dowebok').responsiveSlides({
-        auto: false,
-        nav: true,
-      });
-    });
->>>>>>> origin/master
 
 </script>
  <!--全屏-->

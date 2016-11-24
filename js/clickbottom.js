@@ -1,4 +1,4 @@
-$(document).ready(function(){
+function appear(){
  setTimeout(function () {$("#ohf").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},500); 
  setTimeout(function () {$("#fs").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},1500); 
  setTimeout(function () {$("#a1").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},600); 
@@ -10,8 +10,9 @@ $(document).ready(function(){
  setTimeout(function () {$("#a7").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},1200);      
  setTimeout(function () {$("#a8").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},1300); 
  setTimeout(function () {$("#a9").animate({marginLeft:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},1400); 
- setTimeout(function () {$("#getstart").animate({marginTop:"83vh", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},1400); 
- });
+ setTimeout(function () {$("#getstart").animate({marginBottom:"0px", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},1400); 
+ setTimeout(function () {$("#showin3").animate({marginTop:"83vh", opacity:"show"},{ duration: 1000 }).fadeIn(2000);},1400); 
+ }
 
 var imgSrc=[
 "http://i4.buimg.com/aabe0d7d0afc5a0d.jpg",
@@ -121,7 +122,7 @@ document.getElementById("audio").src=mp3Src[7];
 }
 
 
-function i(){
+function ii(){
 document.getElementById("bgvid").poster=imgSrc[8];
 document.getElementById("bgvid").src=mp4Src[8];
 document.getElementById("audio").src=mp3Src[8];
@@ -129,5 +130,79 @@ document.getElementById("audio").src=mp3Src[8];
        video.play();
 }
 
+var sz=1;
+
+function bs(){
+      $("#jquery_jplayer_1").jPlayer( "clearMedia" );
+      $("#seeme").animate({marginTop:"0vh", opacity:"show"},{ duration: 1000 }).fadeIn(1000);
+      var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
+      {
+        m4a: "http://chansound.oss-cn-shanghai.aliyuncs.com/bodyscan.mp3",
+        oga: "ogg"
+      }, {
+        cssSelectorAncestor: "#cp_container_1"
+      });
+      $(jquery_jplayer_1).jPlayer("setMedia", { // Set the media
+      m4a: "http://chansound.oss-cn-shanghai.aliyuncs.com/bodyscan.mp3"
+    })
+      $("#jquery_jplayer_1").jPlayer("load");
+       myCirclePlayer.play();
+       $("#kwicks").animate({marginTop:"0vh", opacity:"none"},{ duration: 1000 }).fadeOut(1000);
+       sz=-sz;
+}
+
+function bz(){
+       $("#jquery_jplayer_1").jPlayer( "clearMedia" );
+      $("#seeme").animate({marginTop:"0vh", opacity:"show"},{ duration: 1000 }).fadeIn(1000);
+      var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
+      {
+        m4a: "http://chansound.oss-cn-shanghai.aliyuncs.com/breathzen.mp3",
+        oga: "ogg"
+      }, {
+        cssSelectorAncestor: "#cp_container_1"
+      });
+      $(jquery_jplayer_1).jPlayer("setMedia", { // Set the media
+      m4a: "http://chansound.oss-cn-shanghai.aliyuncs.com/breathzen.mp3"
+    })
+      $("#jquery_jplayer_1").jPlayer("load");
+       myCirclePlayer.play();
+       $("#kwicks").animate({marginTop:"0vh", opacity:"none"},{ duration: 1000 }).fadeOut(1000);
+       sz=-sz;
+}
+
+function hb(){
+        $("#jquery_jplayer_1").jPlayer( "clearMedia" );
+      $("#seeme").animate({marginTop:"0vh", opacity:"show"},{ duration: 1000 }).fadeIn(1000);
+      var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
+      {
+        m4a: "http://chansound.oss-cn-shanghai.aliyuncs.com/heartbeat.mp3",
+        oga: "ogg"
+      }, {
+        cssSelectorAncestor: "#cp_container_1"
+      });
+      $(jquery_jplayer_1).jPlayer("setMedia", { // Set the media
+      m4a: "http://chansound.oss-cn-shanghai.aliyuncs.com/heartbeat.mp3"
+    })
+      $("#jquery_jplayer_1").jPlayer("load");
+       myCirclePlayer.play();
+       $("#kwicks").animate({marginTop:"0vh", opacity:"none"},{ duration: 1000 }).fadeOut(1000);
+       sz=-sz;
+}
 
 
+
+function showzen() {
+       if(sz==1){
+       $("#kwicks").animate({marginTop:"0vh", opacity:"show"},{ duration: 1000 }).fadeIn(1000);
+       sz=-sz;
+}else{
+       $("#kwicks").animate({marginTop:"0vh", opacity:"none"},{ duration: 1000 }).fadeOut(1000);
+       sz=-sz;
+}
+}
+
+function alldone(){
+       $("#jquery_jplayer_1").jPlayer( "stop" );
+       $("#kwicks").animate({marginTop:"0vh", opacity:"none"},{ duration: 1000 }).fadeOut(1000);
+       $("#seeme").animate({marginTop:"0vh", opacity:"none"},{ duration: 1000 }).fadeOut(1000);
+}
