@@ -1,8 +1,8 @@
-# onehour
+﻿# onehour
 
 作者： 陈夏力作 和 李艳 
 
-祝友谊地久天长 不要嫌弃对方的傻逼
+傻逼-3-
 
 http://www.chanfocus.com/
 
