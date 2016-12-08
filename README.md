@@ -2,8 +2,6 @@
 
 作者： 陈夏力作 和 李艳 
 
-傻逼-3-
-
 http://www.chanfocus.com/
 
 登陆系统
@@ -18,5 +16,5 @@ http://www.chanfocus.com/
 左侧菜单随分辨率变化
 
 
-YAN LI
-Chen Xia
+Yan LI
+Xia CHEN
