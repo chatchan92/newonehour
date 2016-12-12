@@ -25,6 +25,11 @@ $(document).ready(function() {
     if (animating) return;
     animating = true;
     var that = this;
+    
+    $.post("../prog/prog_login.php",{"pass" : $(".login__input.pass").val()},function(result){
+      console.log(result);
+    });
+
     ripple($(that), e);
     $(that).addClass("processing");
     setTimeout(function() {
