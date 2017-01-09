@@ -1,8 +1,8 @@
-<html>
-<body>
+<?php 
 
-Welcome <?php echo $_POST["password"]; ?><br>
-Your email address is: <?php echo $_POST["email"]; ?>
+if( $_POST["password"] == "ff" && $_POST["email"] == "ff")
+	echo "true";
+else
+	echo "false";
+?>
 
-</body>
-</html>

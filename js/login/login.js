@@ -17,6 +17,8 @@ $(document).ready(function() {
     $ripple.css({top: y, left: x});
     elem.append($ripple);
   };
+
+  // $("#loginForm").ajaxForm({url: 'login.php', type: 'post'})
   
   $(document).on("click", ".login__submit", function(e) {
     /*if (animating) return;
@@ -40,13 +42,15 @@ $(document).ready(function() {
       }, submitPhase2);
     }, submitPhase1);*/
     $.ajax({
-    data: 'orderid=' + 1,
-    url: 'http://localhost/newonehour/login.php',
-    method: 'POST', // or GET
-    success: function(msg) {
-        alert(msg);
-    }
-});
+           type: "POST",
+           url: "login.php",
+           data: $("#loginForm").serialize(), // serializes the form's elements.
+           success: function(data)
+           {
+              //if(data == "true")
+                alert(data); // show response from the php script.
+           }
+         });
   });
   
   $(document).on("click", ".app__logout", function(e) {
