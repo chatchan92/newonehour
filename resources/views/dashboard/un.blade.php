@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%;">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>休息一下-Chanfocus</title>
+
+    <!-- Bootstrap -->
+    <link href="{{asset('resources/views/dashboard/dist/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('resources/views/dashboard/css/rest/style.css')}}" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <script type="text/javascript" src="{{asset('resources/views/dashboard/js/clickbottom.js')}}"></script>
+         <link rel="shortcut icon" type="image/x-icon" href="{{asset('resources/views/dashboard/images/ico.ico')}}" media="screen" />
+  </head>
+  <body>
+
+  <div class="bgvideo" id="video" style="height:118%;top:-9%; ">
+<video autoplay loop preload="auto" style="height:118%;top:-9%;left:0;right:0;display:block;" poster="" id="bgvid">
+<source src="http://chansound.oss-cn-shanghai.aliyuncs.com/un.mp4" type="video/mp4" id="mp4"></video> 
+</div>  
+
+  </body>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{{asset('resources/views/dashboard/dist/js/jquery-1.12.3.min.js')}}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{asset('resources/views/dashboard/dist/js/bootstrap.min.js')}}"></script>
+
+     <script src="{{asset('resources/views/dashboard/js/fullscreen.js')}}"></script>
+      <!-- baidu 统计-->
+     <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?ddeb4613ee56d584aec2b238e845c9d6";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+</script>
+
+  </body>
+</html>
